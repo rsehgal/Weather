@@ -1,0 +1,12 @@
+Add the user to "dialout" group to access the serial console
+
+usermod -a -G dialout MY_USER_NAME
+
+Putty settings:
+Sessions:  Serial : /dev/ttyUSB0 9600
+Logging :  Printable output 
+	   <complete file path with filename> 
+           Always append to the end of  it
+           Flush log file frequently
+           
+* * * * * <path to fetch file>/fetch.sh
